@@ -1,0 +1,128 @@
+<modal-dialog id="PopupModal-quickshop">
+<div data-section-id="{{ section.id }}" data-template="product" class="modal {% if product.has_only_default_variant %}only-default-variant{% endif %}">
+    {% assign current_variant = product.selected_or_first_available_variant %}
+    {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+    {% assign show_vendor = section.settings.show_vendor %}
+    {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+    
+    <div class="modal-dialog modal-dialog-centered modal-xl" data-product-container>
+      <div class="modal-content">
+        <div class="modal-head">
+          <button class="btn py-2 px-3 btn-link close-quickshop" aria-label="{{ 'products.product.close_quickshop' | t }}">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body px-5 py-7">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div data-type="slider" class="product-images-wrapper pr-lg-4 text-center">
+                        {% if featured_image != blank %}
+                            <slider-element class="swiper-container">
+                                <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-quickshop-{{ product.id }}">
+                                    {{ "accessibility.skip_to_product_info" | t }}
+                                </a>
+                                <div class="swiper swiper-slider product-carousel quickshop-slider" data-slider='{
+                                        "loop": false,
+                                        "slidesPerView": "1",
+                                        "spaceBetween": 15,
+                                        "grabCursor": true,
+                                        "navigation": {
+                                            "nextEl": ".swiper-button-next",
+                                            "prevEl": ".swiper-button-prev"
+                                        },
+                                        "pagination": {
+                                            "el": ".swiper-pagination"
+                                        }
+                                    }' role="tree">
+                                    <div class="swiper-wrapper">
+                                        {% for image in product.images %}
+                                        <div class="swiper-slide carousel-cell d-flex align-items-center product--image" data-imageID="{{ image.id }}" role="treeitem">
+                                            <img class="img-fluid" 
+                                            src="{{ image.src | img_url: 'pico' }}"
+                                            srcset="{{ image.src | img_url: '576x' }} 576w,
+                                            {{ image.src | img_url: '768x' }} 768w,
+                                            {{ image.src | img_url: '992x' }} 992w"
+                                            data-variant-title="{{ image.alt | escape }}" 
+                                            sizes="auto"  loading="lazy"
+                                            class="lazyload"
+                                            width="{{ image.width }}"
+                                            height="{{ image.width | divided_by: image.aspect_ratio }}" 
+                                            alt="{{ image.alt | escape }}">
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="swiper-button-next icon-next"></div>
+                                    <div class="swiper-button-prev icon-previous"></div>
+                                </div>    
+                            </slider-element>
+                        {% else %}
+                          {{ 'image' | append: current | placeholder_svg_tag: 'img-fluid' }}
+                        {% endif %}
+                    </div>
+                </div>
+    
+                <div class="col-lg-5" id="ProductInfo-quickshop-{{ product.id }}">
+                    <div class="product-details-wrapper mt-5 mt-lg-0">
+                      <h1 class="product-title">{{ product.title }}</h1>
+    
+                      <div class="align-items-center">
+                        {% if show_vendor %}
+                          <span class="my-0">{{ product.vendor }}</span>
+                        {% endif %}
+                      </div>
+    
+                      <div class="price-wrapper mt-2">
+                        {%- if current_variant.compare_at_price > current_variant.price -%}<s class="h6 text-gray-600 mr-2 money" data-comparePrice>{{ current_variant.compare_at_price | money }}</s>{%- endif -%}
+                        <span class="h5 actual-price money" data-currentPrice>{{ current_variant.price | money }}</span>
+                      </div>
+                    
+                      {%- render 'form-product', product: product, current_variant: current_variant, format: 'quickshop' -%}
+    
+                      {% if product.description %}
+                        <h6 class="mt-5 mb-2">{{ 'products.product.description' | t }}</h6>
+                        <div class="rte">
+                            {{ product.description }}
+                        </div>
+                      {% endif %}
+    
+                      {% if section.settings.show_social_share %}
+                        <h6 class="mt-5 mb-2">{{ 'products.product.share' | t }}</h6>
+                        {% render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %}
+                      {% endif %}
+                    </div>
+    
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</modal-dialog>
+
+{% schema %}
+{
+  "name": "t:sections.template-product.name",
+  "tag": "section",
+  "class": "product-section spaced-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show Vendor?",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_share",
+      "label": "Show Social Share?",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

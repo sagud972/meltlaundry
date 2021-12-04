@@ -1,0 +1,41 @@
+{% assign placement = 'popup' %}
+{% assign video_type = blank %}
+{% case media.media_type %}
+    {% when 'external_video' %}
+        {% if media.host == 'youtube' %}{% assign video_type = 'youtube' %}{% endif %}
+        {% if media.host == 'vimeo' %}{% assign video_type = 'vimeo' %}{% endif %}
+        {% assign video_id = media.external_id %}
+    {% when 'video' %}
+        {% assign video_type = 'local' %}
+        {% assign video_id = media.sources[1].url %}
+{% endcase %}
+
+{% if video_type != blank %}
+{% assign poster_image = media.preview_image.src %}
+<custom-video class="video-with--text placement--{{ placement }}" data-video-type="{{ video_type }}" data-video-id="{{ video_id }}" data-placement="{{ placement }}">
+    <div class="cta-btn" data-aos="hero">
+        <button class="play__button" data-trigger-video aria-label="{{ 'sections.video-with-text.play_video' | t }}">
+            <i class="icon-play"></i>
+            <span class="visually-hidden">{{ 'sections.video-with-text.play_video' | t }}</span>
+        </button>
+    </div>
+    <div class="content-section">
+        <div class="poster-image {{ section.settings.height }}">
+            {%- if poster_image != blank -%}
+                <img srcset="{{ poster_image | img_url: '480x', crop: 'center', format: 'pjpg' }} 360w,
+                    {{ poster_image | img_url: '768x', crop: 'center', format: 'pjpg' }} 535w,
+                    {{ poster_image | img_url: '991x', crop: 'center', format: 'pjpg' }} 720w"
+                    src="{{ poster_image | img_url: 'pico' }}"
+                    loading="lazy"
+                    sizes="auto" class="lazyload"
+                    alt="{{ media.alt | default: product.title | escape }}"
+                    width="{{ media.preview_image.width }}"
+                    height="{{ media.preview_image.width | divided_by: media.preview_image.aspect_ratio }}" >
+            {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+        </div>
+    </div>
+    {%- if placement == 'grid' -%}<div class="video-section {{ section.settings.height }}" tabindex="0"></div>{% endif %}
+</custom-video>
+{% endif %}

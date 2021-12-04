@@ -1,0 +1,106 @@
+{% assign upsellCollection = collections[settings.upsell_collection] %}
+<div class="accordion__container pt-3 border-bottom">
+    <a class="accordion__toggle d-flex font-size-md fw-bold ls-sm text-primary text-uppercase mb-0 pb-3" href="#" title="Open {{ settings.upsell_block_title }}" rel="nofollow" aria-label="Open {{ settings.upsell_block_title }}" role="button" aria-expanded="false" aria-controls="upsell_accordion">
+        <span>{{ settings.upsell_block_title }}</span>
+        <i class="icon-arrow-down ms-auto font-size-lg lh-1"></i>
+    </a>
+    <div class="accordion__block toggle-content" id="upsell_accordion" data-type="content">
+        <slider-element class="swiper-container carousel d-block position-relative">
+            <div class="swiper swiper-slider" data-slider='{
+                    "observer": true,
+                    "observeParents": true,
+                    "loop": false,
+                    "slidesPerView": "1",
+                    "slidesPerView": "auto",
+                    "spaceBetween": 15,
+                    "grabCursor": true
+                }'>
+                <div class="swiper-wrapper">
+                    {% for product in upsellCollection.products limit: 6 %}
+                        {%- assign product_form_id = 'product-form-' | append: product.id -%}
+                        <div class="swiper-slide w-100 form-element" id="{{ product_form_id }}">
+                            <product-form class="product-form">
+                                {%- assign product_form_id = 'product-form-' | append: product.id -%}
+                                {% form 'product', product, id: product_form_id, class: "mt-5", data-product-form: "", data-product-id: product.id, data-type: 'add-to-cart-form' %}
+                                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="cart-img">
+                                            <img class="img-fluid item-img" src="{{ product.featured_image | img_url: '250x' }}" alt="{{ product.title }}" loading="lazy" width="250" height="250">
+                                        </div>
+                                        <div class="cart-item-text ms-2 ms-lg-3">
+                                            <a href="{{ product.url }}" class="card-title text-primary font-family-base fw-normal">{{ product.title }}</a>
+                                            <div class="d-flex align-items-center justify-content-between mb-2 {% if product.variants.size == 1 %}d-none {% endif %}">
+                                                {% unless product.has_only_default_variant %}
+                                                    {%- if settings.enable_swatches -%}
+                                                        <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url | within: collection }}" data-type="variant-radios">
+                                                            {%- for option in product.options_with_values -%}
+                                                                <fieldset class="js product-form__input mb-4 {% if option.name == 'Color' or option.name == 'color' %}color-swatch{% endif %}" data-optionindex="{{ forloop.index }}">
+                                                                    <legend class="form__label fw-medium text-uppercase font-size-sm mb-2">{{ option.name }}
+                                                                        <!-- : <span class="selected-option">{{ option.selected_value }}</span> -->
+                                                                    </legend>
+                                                                    <ul class="list-unstyled d-flex my-0 py-0">
+                                                                        {%- for value in option.values -%}
+                                                                            {%- capture swatchID -%}swatch-upsell-{{ product.id }}-{{ option.name | handleize }}-{{ value | handleize }}{%- endcapture -%}
+                                                                            <li class="me-2">
+                                                                                <div class="swatch {% if option.name == 'Color' or option.name == 'color' %}color-swatch{% endif %}">
+                                                                                    <input type="radio" class="form-control" id="{{ swatchID }}"
+                                                                                        name="upsell-{{ product.id }}-{{ option.name }}" value="{{ value | escape }}"
+                                                                                        {% if forloop.first == true %}checked="true"{% endif %} 
+                                                                                        data-handle="{{ value | handle }}">
+                                                                                    <label class="form-label swatch-label {{ value }}" for="{{ swatchID }}" title="{{ value }}"> {% unless option.name == 'Color' or option.name == 'color' %} {{ value }} {% endunless %}  </label>
+                                                                                </div>
+                                                                            </li>
+                                                                        {%- endfor -%}
+                                                                        </ul>
+                                                                </fieldset>
+                                                            {%- endfor -%}
+                                                        </variant-radios>
+                                                    {%- else -%}
+                                                        <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url | within: collection }}" data-type="variant-select">
+                                                            {%- for option in product.options_with_values -%}
+                                                            <div class="product-form__input product-form__input--dropdown mb-4" data-optionindex="{{ forloop.index }}">
+                                                                <label class="fw-medium text-uppercase font-size-sm mb-2" for="Option-{{ section.id }}-{{ forloop.index0 }}" title="{{ option.selected_value }}">
+                                                                {{ option.name }}: <span class="selected-option">{{ option.selected_value }}</span>
+                                                                </label>
+                                                                <div class="select">
+                                                                <select id="Option-{{ section.id }}-{{ forloop.index0 }}" class="form-select variant_selector" name="options[{{ option.name | escape }}]" form="product-form-{{ product.id }}">
+                                                                    {%- for value in option.values -%}
+                                                                    <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
+                                                                        {{ value }}
+                                                                    </option>
+                                                                    {%- endfor -%}
+                                                                </select>
+                                                                </div>
+                                                            </div>
+                                                            {%- endfor -%}
+                                                        </variant-selects>
+                                                    {%- endif -%}
+                                                {% endunless %}
+                                            </div>
+                                        </div>
+                                        <div class="caert-item-add px-3">
+                                            <button class="btn btn-outline-primary btn-sm"
+                                                type="submit"
+                                                name="add"
+                                                aria-label="{{ 'products.product.add_to_cart' | t | escape }}"
+                                                {% unless current_variant.available %}disabled{% endunless %}>
+                                                <span class="add-text">{%- if product.available -%}{{ 'templates.cart.upsell_add_btn' | t }}{%- else-%}{{ 'templates.cart.upsell_add_btn' | t }}{%- endif -%}</span>
+                                                <span class="spinner"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <script class="variantsJSON-{{ product.id }}" data-variantJSON type="application/json">
+                                        {{ product.variants | json }}
+                                    </script>
+                                {% endform %}
+                            </product-form>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="review-arrow-group">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </slider-element>
+    </div>
+</div>

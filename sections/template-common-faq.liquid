@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mb-12">
+            <h1 class="mb-0">{{ section.settings.title }}</h1>
+        </div>
+    </div>
+
+    {% assign faqList = section.settings.faq_blocks | newline_to_br | split: '<br />' %}
+    {% if faqList.size > 0 %}
+    <div class="row mb-md-5">
+        <div class="col-md-3 mb-6">
+            <div class="p-5 position-sticky" id="title-color">
+                <ul class="list-unstyled mb-0" id="scrollspy-navs">
+                    {% for faq in faqList %}
+                    <li class="faq-listing">
+                        <a href="#{{ faq | handleize }}" class="h6 mb-0">{{ faq }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+{% schema %}
+{
+"name": "FAQs Template",
+"class": "common-faq-block",
+"settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Page Title",
+        "default": "Frequently Asked Questions"
+    },
+    {
+        "type": "textarea",
+        "id": "faq_blocks",
+        "label": "FAQ Block",
+        "info": "Each block name must be in new line."
+    }
+]
+}
+{% endschema %}

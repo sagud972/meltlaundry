@@ -1,0 +1,78 @@
+{% if section.settings.enable %}
+<section data-section-id="{{ section.id }}" class="section-content section-faq pb-0" >
+    <div class="container">
+        <div class="row">
+            <div class="col-12" >
+                <div class="block-heading">
+                    <h3>{{ section.settings.heading }}</h3>
+                </div>
+                <div data-faq-section>
+                    <div class="mb-6 mb-lg-10">
+                        <custom-accordion {{ block.shopify_attributes }} data-accordionType="single">
+                        {% for block in section.blocks %}
+                            {% if block.settings.title != blank and block.settings.answer != blank %}
+                                <div>
+                                    <div class="accordion__container border-bottom border-secondary">
+                                    <a class="accordion__Toggle d-flex py-4 align-items-center pe-2" href="#" title="Open {{ block.settings.title }}" rel="nofollow" aria-label="Open {{ block.settings.title }}" role="button" aria-expanded="false" aria-controls="faq-{{ section.settings.heading | handleize }}-{{ forloop.index }}">
+                                        <h6 class="mb-0">{{ block.settings.title }}</h6>
+                                        <i class="icon-plus ms-auto lh-1 h6 mb-0"></i>
+                                    </a>
+                                    <div class="accordion__block toggle-content" id="faq-{{ section.settings.heading | handleize }}-{{ forloop.index }}" data-type="content">
+                                        <div class="rpt-5 font-size-md">{{ block.settings.answer }}</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        </custom-accordion>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "FAQ Block",
+    "class": "dynamic-faq-block",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enable",
+            "label": "Enable?"
+        },
+		{
+            "type": "text",
+            "id": "heading",
+            "label": "Block Title",
+            "default": "FAQ"
+        }
+	],
+    "blocks": [
+        {
+            "type": "question",
+            "name": "FAQ",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "title",
+                    "label": "Question"
+                },
+                {
+                    "type": "richtext",
+                    "id": "answer",
+                    "label": "Answer"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "FAQ Block",
+            "category": "Content"
+        }
+    ]
+}
+{% endschema %}

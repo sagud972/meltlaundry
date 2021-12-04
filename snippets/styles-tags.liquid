@@ -1,0 +1,46 @@
+
+
+{% comment %} root variables css {% endcomment %}
+{%- render 'theme-style' -%}
+
+{% comment %} Global css {% endcomment %}
+{{ 'global.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Icon css {% endcomment %}
+{{ 'global-icon.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Swipper Slider css {% endcomment %}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Product Card css {% endcomment %}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Collection Page css {% endcomment %}
+{%- if template.name == 'collection' -%} 
+
+    {% comment %} Collection Page custom css {% endcomment %}
+    {{ 'template-collection.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} Collection Filter css {% endcomment %}
+    {{ 'component-filter.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} Pagination css {% endcomment %}
+    {{ 'component-pagination.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{% comment %} Product Page css {% endcomment %}
+{%- if template.name == 'product' -%}
+    {{ 'template-product.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{% comment %} Search Page css {% endcomment %}
+{%- if template.name == 'search' -%} 
+
+    {% comment %} Search Filter css {% endcomment %}
+    {{ 'component-filter.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} Pagination css {% endcomment %}
+    {{ 'component-pagination.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{{ 'component-modal.css' | asset_url | stylesheet_tag }}
