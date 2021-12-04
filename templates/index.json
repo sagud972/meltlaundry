@@ -6,51 +6,29 @@
         "e5811002-6f6b-488d-a9a4-803d62a8f03e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mlouye-sera-tote-macaron-desk1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/mlouye-sera-tote-macaron-mob2.jpg",
+            "image_large_desktop": "shopify:\/\/shop_images\/meltlaundry.jpg",
+            "image": "shopify:\/\/shop_images\/meltlaundry.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/meltlaundry.jpg",
             "slide_bg_color": "#ffffff",
-            "enable_overlay": false,
+            "enable_overlay": true,
             "overlay_bg_color": "#000000",
-            "overlay_opacity": 0.1,
+            "overlay_opacity": 0.3,
             "caption_alignment": "justify-content-center",
             "alignment": "text-center",
-            "heading": "Awesome Hero Slider",
-            "caption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            "heading": "The Future of Laundry Care is Here...",
+            "caption": "Melt Strips are a laundry revolution.",
             "heading_txt_color": "#ffffff",
             "caption_txt_color": "#ffffff",
             "btn_txt": "Shop Now",
             "btn_link": "#",
             "btn_type": "",
-            "btn_variant": "white",
-            "btn_size": ""
-          }
-        },
-        "5f138ef3-db88-4ec2-9c76-525b0af787bf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mlouye-thelma-louise-homepage-1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/mlouye-thelma-louise-homepage-2.jpg",
-            "slide_bg_color": "#ffffff",
-            "enable_overlay": true,
-            "overlay_bg_color": "#ffffff",
-            "overlay_opacity": 0.1,
-            "caption_alignment": "justify-content-center",
-            "alignment": "text-center",
-            "heading": "Awesome Hero Slider",
-            "caption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "heading_txt_color": "",
-            "caption_txt_color": "",
-            "btn_txt": "Shop Now",
-            "btn_link": "#",
-            "btn_type": "",
-            "btn_variant": "dark",
+            "btn_variant": "secondary",
             "btn_size": ""
           }
         }
       },
       "block_order": [
-        "e5811002-6f6b-488d-a9a4-803d62a8f03e",
-        "5f138ef3-db88-4ec2-9c76-525b0af787bf"
+        "e5811002-6f6b-488d-a9a4-803d62a8f03e"
       ],
       "settings": {
         "enabled": true,
@@ -60,57 +38,6 @@
         "height": "tallheight"
       }
     },
-    "16340470257b64c625": {
-      "type": "global-auto-scroll",
-      "blocks": {
-        "dbe162d7-b022-4bda-a08c-393b8e586eb9": {
-          "type": "heading",
-          "settings": {
-            "heading": "naturally preserved"
-          }
-        },
-        "efb3fd59-e7b3-484b-acd9-7415f14a45bc": {
-          "type": "heading",
-          "settings": {
-            "heading": "clean & pure"
-          }
-        },
-        "2832775f-e3a1-4daf-a6fd-37a912db8c3d": {
-          "type": "heading",
-          "settings": {
-            "heading": "vegan"
-          }
-        },
-        "b47bbbf3-f6e3-4b54-9deb-89f7fc0f941f": {
-          "type": "heading",
-          "settings": {
-            "heading": "peta cruelty free"
-          }
-        },
-        "6c4e4a96-2820-4a55-9de7-a30ab2260875": {
-          "type": "heading",
-          "settings": {
-            "heading": "organics based"
-          }
-        },
-        "5b557eaa-8f69-4e03-94a6-369b375a127d": {
-          "type": "heading",
-          "settings": {
-            "heading": "trust & love"
-          }
-        }
-      },
-      "block_order": [
-        "dbe162d7-b022-4bda-a08c-393b8e586eb9",
-        "efb3fd59-e7b3-484b-acd9-7415f14a45bc",
-        "2832775f-e3a1-4daf-a6fd-37a912db8c3d",
-        "b47bbbf3-f6e3-4b54-9deb-89f7fc0f941f",
-        "6c4e4a96-2820-4a55-9de7-a30ab2260875",
-        "5b557eaa-8f69-4e03-94a6-369b375a127d"
-      ],
-      "settings": {
-      }
-    },
     "16270420142c0cafe8": {
       "type": "global-features-grid",
       "blocks": {
@@ -118,48 +45,48 @@
           "type": "content",
           "settings": {
             "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/naturally_preserved.svg?v=1632919288",
-            "title": "naturally preserved",
-            "txt": ""
+            "title": "Zero-waste & plastic free packaging",
+            "txt": "<p>The UK generates 2.3m tons of plastic packaging waste each year. Only 35% of this is recycled. Melt saves 3kg of single use plastic a year over pods. Thats a lot.<\/p>"
           }
         },
         "beea9bb0-d601-4956-83a1-f2d38787618b": {
           "type": "content",
           "settings": {
             "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/organics_based.svg?v=1632919287",
-            "title": "organics based",
-            "txt": ""
+            "title": "99% Less Toxins and fragrance than others",
+            "txt": "<p>Free from artificial dyes, colours, phosphates, phthalates or parabens and with less fragrance than other brands<\/p>"
           }
         },
         "798431da-59c8-4c8e-92d3-73e2aac83e38": {
           "type": "content",
           "settings": {
             "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/vegan.svg?v=1632919287",
-            "title": "vegan",
-            "txt": ""
+            "title": "Safety First",
+            "txt": "<p>Melt's natural ingredients are gentle on clothing, skin, and the environment<\/p>"
           }
         },
         "a9a29ecb-1e86-4c8a-be5e-8a146e4e9a49": {
           "type": "content",
           "settings": {
             "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/peta_cruelty_free.svg?v=1632919287",
-            "title": "peta cruelty free",
-            "txt": ""
+            "title": "Cruelty Free",
+            "txt": "<p>No animal-based ingredients or testing on animals<\/p>"
           }
         },
         "81136cdc-7195-4ea6-abe7-31f4df772124": {
           "type": "content",
           "settings": {
             "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/clean_pure.svg?v=1632919287",
-            "title": "clean & pure",
-            "txt": ""
+            "title": "Free Shipping",
+            "txt": "<p>All subscriptions are shipped free of charge on a Royal Mail 24hr service<\/p>"
           }
         },
         "cf990352-fa89-462e-9b30-ba28b8d1bead": {
           "type": "content",
           "settings": {
             "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/trust_love.svg?v=1632919287",
-            "title": "trust & love",
-            "txt": ""
+            "title": "Returnless Refund",
+            "txt": "<p>We stand behind our product. If you're not happy with it for any reason... get your money back with no quibbles and keep the free washes! We are that confident.<\/p>"
           }
         }
       },
@@ -173,73 +100,28 @@
       ],
       "settings": {
         "fluid_layout": false,
-        "grid_size": "2",
-        "heading_txt": "Where nature meets science.",
-        "lead_txt": "We use cutting-edge technologies in natural ingredient formulations to offer skin-healthy makeup and skincare that’s results-driven yet gentle and kind to our earth.",
+        "grid_size": "4",
+        "heading_txt": "Help Us Care for The World",
+        "lead_txt": "Here at Melt, we value a clean & sustainable world. By subscribing you are dedicating yourself to a lifetime of giving back to Mother Earth... and fresh laundry!",
         "btn_txt": "Learn More",
         "btn_url": "#",
         "section_bg_color": "#ffffff",
-        "section_txt_color": "#222222",
+        "section_txt_color": "#294361",
         "btn_type": "",
-        "btn_variant": "primary",
+        "btn_variant": "secondary",
         "btn_size": ""
-      }
-    },
-    "16273012625e8a6f4e": {
-      "type": "global-collection-list",
-      "blocks": {
-        "16273012625e8a6f4e-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "tops",
-            "show_view_all": "Shop Now",
-            "section_txt_color": "#000000"
-          }
-        },
-        "16273012625e8a6f4e-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "tunics",
-            "show_view_all": "Shop Now",
-            "section_txt_color": "#000000"
-          }
-        },
-        "75b8530c-55ba-421c-8e38-0f2ed94ded2e": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "spring",
-            "show_view_all": "Shop Now",
-            "section_txt_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "16273012625e8a6f4e-0",
-        "16273012625e8a6f4e-1",
-        "75b8530c-55ba-421c-8e38-0f2ed94ded2e"
-      ],
-      "settings": {
-        "title": "Collections",
-        "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.",
-        "section_bg_color": "#fafaf7",
-        "section_txt_color": "#222222",
-        "grid_size": "4",
-        "image_ratio": "adapt",
-        "enable_overlay": false,
-        "overlay_bg_color": "#000000",
-        "overlay_opacity": 0.5
       }
     },
     "162703446299aaa8de": {
       "type": "global-featured-collection",
       "settings": {
         "fluid_layout": false,
-        "collection_grid_type": "grid",
+        "collection_grid_type": "collage",
         "heading_txt": "Featured Collection",
-        "lead_txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.",
-        "home_featured_collection": "dresses-long-sleeve",
-        "section_bg_color": "#ffffff",
-        "section_txt_color": "#222222"
+        "lead_txt": "",
+        "home_featured_collection": "all",
+        "section_bg_color": "#fafbfc",
+        "section_txt_color": "#294361"
       }
     },
     "162710985888a5f3c0": {
@@ -279,8 +161,6 @@
         "162710985888a5f3c0-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/mlouye-puff-desktop-1.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/mlouye-puff-mobile-1.jpg",
         "txt_color": "#ffffff",
         "enable_overlay": true,
         "overlay_bg_color": "#000000",
@@ -377,7 +257,6 @@
         "btn_type": "",
         "btn_variant": "primary",
         "btn_size": "",
-        "image": "shopify:\/\/shop_images\/mlouye-new-small-naomi-mob.jpg",
         "section_bg_color": "#fafaf7",
         "section_text_color": "#000000",
         "alignment": "text-left",
@@ -458,7 +337,6 @@
         "btn_variant": "white",
         "btn_size": "",
         "fluid_video_layout": true,
-        "poster_image": "shopify:\/\/shop_images\/mlouye-thelma-louise-homepage-1.jpg",
         "video_type": "youtube",
         "placement": "grid",
         "video_id": "XqZsoesa55w",
@@ -522,12 +400,6 @@
         "163403325190e9c2fd-2"
       ],
       "settings": {
-        "image_large": "shopify:\/\/shop_images\/mlouye-sera-tote-macaron-desk1.jpg",
-        "image_small": "shopify:\/\/shop_images\/mlouye-sera-tote-macaron-desk1.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/mlouye-sera-tote-macaron-mob2.jpg",
-        "image_large_2": "shopify:\/\/shop_images\/mlouye-new-small-naomi-desktop.jpg",
-        "image_small_2": "shopify:\/\/shop_images\/mlouye-new-small-naomi-desktop.jpg",
-        "image_mobile_2": "shopify:\/\/shop_images\/mlouye-new-small-naomi-mob.jpg",
         "image_overlay_opacity": 0,
         "height": "tallheight",
         "show_text_box": true,
@@ -542,9 +414,7 @@
   },
   "order": [
     "16270344513581fee7",
-    "16340470257b64c625",
     "16270420142c0cafe8",
-    "16273012625e8a6f4e",
     "162703446299aaa8de",
     "162710985888a5f3c0",
     "16271097114d5db4ef",

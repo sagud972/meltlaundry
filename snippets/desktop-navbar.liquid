@@ -1,4 +1,4 @@
-<ul class="navbar-nav align-items-center me-auto">
+<ul class="navbar-nav align-items-center mx-auto">
     {% for link in linklists[section.settings.menu].links %}
       {% assign child_list_handle = link.title | handleize %}
       {% if menus[child_list_handle].links != blank %}
@@ -45,7 +45,7 @@
     {% endfor %}
   </ul>
 
-  <ul class="navbar-nav navbar-icon-links align-items-center ms-auto">
+  <ul class="navbar-nav navbar-icon-links align-items-center">
       {%- if settings.enable_search -%}
       <li class="nav-item">
         <a href="{{ routes.search_url }}" class="nav-link modal__toggle open-searchform" aria-haspopup="dialog" aria-label="{{ 'general.search.title' | t }}">
