@@ -11,16 +11,16 @@
             "image_mobile": "shopify:\/\/shop_images\/meltlaundry.jpg",
             "slide_bg_color": "#ffffff",
             "enable_overlay": true,
-            "overlay_bg_color": "#000000",
-            "overlay_opacity": 0.3,
+            "overlay_bg_color": "#212529",
+            "overlay_opacity": 0.2,
             "caption_alignment": "justify-content-center",
             "alignment": "text-center",
-            "heading": "The Future of Laundry Care is Here...",
-            "caption": "Melt Strips are a laundry revolution.",
+            "heading": "Melt Strips are a Laundry Revolution",
+            "caption": "If you want a cool zero-plastic eco detergent that can outperform the old detergent brands then get on Melt today",
             "heading_txt_color": "#ffffff",
             "caption_txt_color": "#ffffff",
             "btn_txt": "Shop Now",
-            "btn_link": "#",
+            "btn_link": "shopify:\/\/products\/copy-of-melt-60-washes",
             "btn_type": "",
             "btn_variant": "secondary",
             "btn_size": ""
@@ -35,7 +35,39 @@
         "is_hidden_on_mobile": false,
         "nav_arrows": true,
         "nav_dots": true,
-        "height": "tallheight"
+        "height": "fullheight"
+      }
+    },
+    "16270454495feb2a63": {
+      "type": "global-image-with-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "The Future of Laundry Care is Here...",
+        "txt": "<p><strong>Melt Strips are a laundry revolution.<\/strong><\/p><p>They bring amazing eco benefits to you, your clothes and the planet.<\/p><p>Thousands of customers have switched to Melt Strips since our launch in 2021.<\/p><p>We can now let our customers do the talking for us. See above or below.<\/p><p>If you want a cool zero-plastic eco detergent that can <strong>outperform<\/strong> the old detergent brands then get on Melt today.<\/p><p><strong>We deliver a clean promise.<\/strong><\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "Find out more",
+        "btn_link": "shopify:\/\/products\/copy-of-melt-60-washes",
+        "btn_type": "",
+        "btn_variant": "secondary",
+        "btn_size": "",
+        "image": "shopify:\/\/shop_images\/Untitled_design_54c7be61-a266-4c1f-ac4c-75030817339d.png",
+        "section_bg_color": "#ffffff",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "left"
+      }
+    },
+    "162703446299aaa8de": {
+      "type": "global-featured-collection",
+      "settings": {
+        "fluid_layout": false,
+        "collection_grid_type": "collage",
+        "heading_txt": "Our Collection",
+        "lead_txt": "The most eco laundry product on the market",
+        "home_featured_collection": "all",
+        "section_bg_color": "#fafbfc",
+        "section_txt_color": "#294361"
       }
     },
     "16270420142c0cafe8": {
@@ -44,7 +76,7 @@
         "16270420142c0cafe8-0": {
           "type": "content",
           "settings": {
-            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/naturally_preserved.svg?v=1632919288",
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/recycling.png?v=1633535187",
             "title": "Zero-waste & plastic free packaging",
             "txt": "<p>The UK generates 2.3m tons of plastic packaging waste each year. Only 35% of this is recycled. Melt saves 3kg of single use plastic a year over pods. Thats a lot.<\/p>"
           }
@@ -52,7 +84,7 @@
         "beea9bb0-d601-4956-83a1-f2d38787618b": {
           "type": "content",
           "settings": {
-            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/organics_based.svg?v=1632919287",
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/earth.png?v=1633535187",
             "title": "99% Less Toxins and fragrance than others",
             "txt": "<p>Free from artificial dyes, colours, phosphates, phthalates or parabens and with less fragrance than other brands<\/p>"
           }
@@ -60,7 +92,7 @@
         "798431da-59c8-4c8e-92d3-73e2aac83e38": {
           "type": "content",
           "settings": {
-            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/vegan.svg?v=1632919287",
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/clean.png?v=1633535286",
             "title": "Safety First",
             "txt": "<p>Melt's natural ingredients are gentle on clothing, skin, and the environment<\/p>"
           }
@@ -68,7 +100,7 @@
         "a9a29ecb-1e86-4c8a-be5e-8a146e4e9a49": {
           "type": "content",
           "settings": {
-            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/peta_cruelty_free.svg?v=1632919287",
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/puppy.png?v=1633535187",
             "title": "Cruelty Free",
             "txt": "<p>No animal-based ingredients or testing on animals<\/p>"
           }
@@ -76,7 +108,7 @@
         "81136cdc-7195-4ea6-abe7-31f4df772124": {
           "type": "content",
           "settings": {
-            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/clean_pure.svg?v=1632919287",
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/box.png?v=1633535187",
             "title": "Free Shipping",
             "txt": "<p>All subscriptions are shipped free of charge on a Royal Mail 24hr service<\/p>"
           }
@@ -84,7 +116,7 @@
         "cf990352-fa89-462e-9b30-ba28b8d1bead": {
           "type": "content",
           "settings": {
-            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/trust_love.svg?v=1632919287",
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/laundry-basket.png?v=1633535187",
             "title": "Returnless Refund",
             "txt": "<p>We stand behind our product. If you're not happy with it for any reason... get your money back with no quibbles and keep the free washes! We are that confident.<\/p>"
           }
@@ -103,73 +135,13 @@
         "grid_size": "4",
         "heading_txt": "Help Us Care for The World",
         "lead_txt": "Here at Melt, we value a clean & sustainable world. By subscribing you are dedicating yourself to a lifetime of giving back to Mother Earth... and fresh laundry!",
-        "btn_txt": "Learn More",
-        "btn_url": "#",
+        "btn_txt": "GET STARTED",
+        "btn_url": "shopify:\/\/products\/copy-of-melt-60-washes",
         "section_bg_color": "#ffffff",
-        "section_txt_color": "#294361",
-        "btn_type": "",
+        "section_txt_color": "#000000",
+        "btn_type": "outline",
         "btn_variant": "secondary",
         "btn_size": ""
-      }
-    },
-    "162703446299aaa8de": {
-      "type": "global-featured-collection",
-      "settings": {
-        "fluid_layout": false,
-        "collection_grid_type": "collage",
-        "heading_txt": "Featured Collection",
-        "lead_txt": "",
-        "home_featured_collection": "all",
-        "section_bg_color": "#fafbfc",
-        "section_txt_color": "#294361"
-      }
-    },
-    "162710985888a5f3c0": {
-      "type": "global-image-banner",
-      "blocks": {
-        "162710985888a5f3c0-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Nature inspired colors. Science powered formulas."
-          }
-        },
-        "162710985888a5f3c0-1": {
-          "type": "text",
-          "settings": {
-            "text": "Our products are formulated with state-of-the-art, naturally-derived ingredients that are healthy for your skin and conscientious of our planet."
-          }
-        },
-        "162710985888a5f3c0-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "shop our products",
-            "button_link_1": "#",
-            "btn_type_1": "",
-            "btn_variant_1": "white",
-            "btn_size_1": "",
-            "button_label_2": "",
-            "button_link_2": "#",
-            "btn_type_2": "",
-            "btn_variant_2": "dark",
-            "btn_size_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "162710985888a5f3c0-0",
-        "162710985888a5f3c0-1",
-        "162710985888a5f3c0-2"
-      ],
-      "settings": {
-        "txt_color": "#ffffff",
-        "enable_overlay": true,
-        "overlay_bg_color": "#000000",
-        "overlay_opacity": 0.1,
-        "height": "tallheight",
-        "desktop_text_box_position": "center",
-        "text_caption_align": "justify-content-start",
-        "text_align": "text-left",
-        "section_padding": false
       }
     },
     "16271097114d5db4ef": {
@@ -178,250 +150,95 @@
         "3985dafd-8fbe-495c-a78d-17788cc28cb2": {
           "type": "content",
           "settings": {
-            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/Byrdie_Logo.svg?v=1633088478",
+            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/2560px-The_Guardian_2018.svg_016abfc2-9a71-4358-b03e-3fd8f6ff7601.png?v=1636480489",
             "logo_url": ""
           }
         },
         "2c2f7a1a-e97d-4315-a0d6-2b357320264d": {
           "type": "content",
           "settings": {
-            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/Glamour_Logo.svg?v=1633088478",
-            "logo_url": ""
-          }
-        },
-        "5c384d1d-15bc-4d8a-b411-54440fe6475c": {
-          "type": "content",
-          "settings": {
-            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/New_Beauty_Logo.svg?v=1633088478",
-            "logo_url": ""
-          }
-        },
-        "1cf12a9a-a950-4b88-94d8-d4b64a084978": {
-          "type": "content",
-          "settings": {
-            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/YahooLifestyle_Logo.svg?v=1633088478",
-            "logo_url": ""
-          }
-        },
-        "18b7a918-9ecf-47e3-8da7-6d93a7a330e6": {
-          "type": "content",
-          "settings": {
-            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/Hynt_Logo.svg?v=1633088478",
-            "logo_url": ""
-          }
-        },
-        "2dc4650f-8c4f-439c-adf1-6e23854d3945": {
-          "type": "content",
-          "settings": {
-            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/Byrdie_Logo.svg?v=1633088478",
-            "logo_url": ""
-          }
-        },
-        "65899402-a15a-469b-b33b-68f8b34d239b": {
-          "type": "content",
-          "settings": {
-            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/New_Beauty_Logo.svg?v=1633088478",
+            "logo_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/Daco_5377343.png?v=1636480579",
             "logo_url": ""
           }
         }
       },
       "block_order": [
         "3985dafd-8fbe-495c-a78d-17788cc28cb2",
-        "2c2f7a1a-e97d-4315-a0d6-2b357320264d",
-        "5c384d1d-15bc-4d8a-b411-54440fe6475c",
-        "1cf12a9a-a950-4b88-94d8-d4b64a084978",
-        "18b7a918-9ecf-47e3-8da7-6d93a7a330e6",
-        "2dc4650f-8c4f-439c-adf1-6e23854d3945",
-        "65899402-a15a-469b-b33b-68f8b34d239b"
+        "2c2f7a1a-e97d-4315-a0d6-2b357320264d"
       ],
       "settings": {
         "fluid_layout": false,
-        "heading": "Awesome Heading",
-        "txt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.<\/p>",
-        "section_bg_color": "#ffffff",
-        "section_txt_color": "#222222",
+        "heading": "As Seen In",
+        "txt": "",
+        "section_bg_color": "#fafbfc",
+        "section_txt_color": "#294361",
         "nav_arrows": true,
-        "nav_dots": true
-      }
-    },
-    "16270454495feb2a63": {
-      "type": "global-image-with-text",
-      "settings": {
-        "fluid_layout": false,
-        "heading_txt": "Natural beauty brand you can fully trust & love.",
-        "txt": "<p>We employ cutting-edge, clean ingredient technologies as well as certified organic ingredients that are rich in antioxidants, skin-energizing vitamins and peptides to deliver glowing results while being gentle on even the most sensitive skin types. <br\/><br\/>We are committed to educating you on how to best support a feeling of healthy, naturally balanced skin, so that you can feel confident and comfortable in your everyday beauty and lifestyle choices.<\/p>",
-        "step_heading": "",
-        "steps_captions": "",
-        "btn_txt": "Learn More",
-        "btn_link": "#",
-        "btn_type": "",
-        "btn_variant": "primary",
-        "btn_size": "",
-        "section_bg_color": "#fafaf7",
-        "section_text_color": "#000000",
-        "alignment": "text-left",
-        "image_alignment": "left"
-      }
-    },
-    "1633694875e64c966c": {
-      "type": "global-testimonial",
-      "blocks": {
-        "bec19606-fd7b-4892-94c8-895d17e708a7": {
-          "type": "logowidthtext",
-          "settings": {
-            "quote_logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/Glamour_Logo.svg?v=1633088478",
-            "title": "<p>“People are raving about this botanical-infused concealer for calming their cystic acne.”<\/p>",
-            "author_name": "",
-            "alignment": "text-center"
-          }
-        },
-        "ac18a9c2-3ee3-40a7-aa27-5a0b6ea0826a": {
-          "type": "logowidthtext",
-          "settings": {
-            "quote_logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/Byrdie_Logo.svg?v=1633088478",
-            "title": "<p>“People are raving about this botanical-infused concealer for calming their cystic acne.”<\/p>",
-            "author_name": "",
-            "alignment": "text-center"
-          }
-        },
-        "3039a1d6-b656-43e3-b390-988ee1cedac5": {
-          "type": "logowidthtext",
-          "settings": {
-            "quote_logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/New_Beauty_Logo.svg?v=1633088478",
-            "title": "<p>“People are raving about this botanical-infused concealer for calming their cystic acne.”<\/p>",
-            "author_name": "",
-            "alignment": "text-center"
-          }
-        },
-        "735daa80-06f6-48fb-97ef-0b3ca8569805": {
-          "type": "logowidthtext",
-          "settings": {
-            "quote_logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/YahooLifestyle_Logo.svg?v=1633088478",
-            "title": "<p>“People are raving about this botanical-infused concealer for calming their cystic acne.”<\/p>",
-            "author_name": "",
-            "alignment": "text-center"
-          }
-        }
-      },
-      "block_order": [
-        "bec19606-fd7b-4892-94c8-895d17e708a7",
-        "ac18a9c2-3ee3-40a7-aa27-5a0b6ea0826a",
-        "3039a1d6-b656-43e3-b390-988ee1cedac5",
-        "735daa80-06f6-48fb-97ef-0b3ca8569805"
-      ],
-      "settings": {
-        "fluid_layout": false,
-        "heading_txt": "in the press",
-        "lead_txt": "",
-        "section_bg_color": "#ffffff",
-        "section_text_color": "#000000",
-        "enable": false,
-        "overlay_color": "#000000",
-        "opacity": 0.5,
-        "nav_arrows": false,
         "nav_dots": true
       }
     },
     "162943776301163939": {
       "type": "global-video-with-text",
       "settings": {
-        "fluid_layout": false,
+        "fluid_layout": true,
         "muted": true,
-        "controls": true,
+        "controls": false,
         "loop": true,
-        "title": "Awesome Heading",
-        "subtitle": "<p>Lipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.<\/p>",
+        "title": "How it's Work",
+        "subtitle": "",
         "btn_txt": "",
         "btn_link": "",
         "btn_type": "",
-        "btn_variant": "white",
+        "btn_variant": "primary",
         "btn_size": "",
         "fluid_video_layout": true,
-        "video_type": "youtube",
+        "poster_image": "shopify:\/\/shop_images\/stainless-steel-washing-machine-door.jpg",
+        "video_type": "local",
         "placement": "grid",
-        "video_id": "XqZsoesa55w",
-        "mobile_video_id": "",
+        "video_id": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/web-video.mp4?v=1635364791",
+        "mobile_video_id": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/web-video.mp4?v=1635364791",
         "section_bg_color": "rgba(0,0,0,0)",
         "section_text_color": "#ffffff",
         "alignment": "text-left",
         "video_alignment": "justify-content-center"
       }
     },
-    "1627036040e9086143": {
-      "type": "global-blog-posts",
-      "settings": {
-        "fluid_layout": false,
-        "blog_handles": "News",
-        "heading_txt": "News & Views",
-        "lead_txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.",
-        "btn_txt": "",
-        "btn_url": "",
-        "section_bg_color": "#ffffff",
-        "section_txt_color": "#212529",
-        "btn_type": "outline",
-        "btn_variant": "primary",
-        "btn_size": ""
-      }
-    },
-    "163403325190e9c2fd": {
-      "type": "global-split-image-banner",
+    "1638705110baeb7a44": {
+      "type": "global-how-work-grid",
       "blocks": {
-        "163403325190e9c2fd-0": {
-          "type": "heading",
+        "163870511072474d38-0": {
+          "type": "content",
           "settings": {
-            "heading": "Image banner"
-          }
-        },
-        "163403325190e9c2fd-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "163403325190e9c2fd-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "btn_type_1": "",
-            "btn_variant_1": "primary",
-            "btn_size_1": "",
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "btn_type_2": "",
-            "btn_variant_2": "primary",
-            "btn_size_2": ""
+            "icon_img": "",
+            "title": "",
+            "txt": ""
           }
         }
       },
       "block_order": [
-        "163403325190e9c2fd-0",
-        "163403325190e9c2fd-1",
-        "163403325190e9c2fd-2"
+        "163870511072474d38-0"
       ],
       "settings": {
-        "image_overlay_opacity": 0,
-        "height": "tallheight",
-        "show_text_box": true,
-        "text_caption_align": "justify-content-center",
-        "vertical_caption_align": "align-items-center",
-        "text_align": "text-center",
-        "color_scheme": "#ffffff",
-        "stack_images_on_mobile": false,
-        "show_text_below": true
+        "fluid_layout": false,
+        "grid_size": "4",
+        "heading_txt": "Melt's 3 Step Process",
+        "lead_txt": "",
+        "btn_txt": "",
+        "btn_url": "",
+        "section_bg_color": "#ffffff",
+        "section_txt_color": "#222222",
+        "btn_type": "outline",
+        "btn_variant": "primary",
+        "btn_size": ""
       }
     }
   },
   "order": [
     "16270344513581fee7",
-    "16270420142c0cafe8",
-    "162703446299aaa8de",
-    "162710985888a5f3c0",
-    "16271097114d5db4ef",
     "16270454495feb2a63",
-    "1633694875e64c966c",
+    "162703446299aaa8de",
+    "16270420142c0cafe8",
+    "16271097114d5db4ef",
     "162943776301163939",
-    "1627036040e9086143",
-    "163403325190e9c2fd"
+    "1638705110baeb7a44"
   ]
 }

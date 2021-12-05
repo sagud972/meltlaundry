@@ -3,7 +3,7 @@
 <noscript>{{ 'global-video-with-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 <section class="{% unless section.settings.fluid_video_layout %}section-content{% endunless %} video-with-text custom-video-banner" data-section-id="{{ section.id }}" style="background:{{ section.settings.section_bg_color }}; color:{{ section.settings.section_txt_color }}">
-    <div class="{% if section.settings.fluid_layout %}container-fluid{% else %}container{% endif %}">
+    <div class="{% if section.settings.fluid_layout %}container-fluid px-0{% else %}container{% endif %} border-top border-bottom">
         <div class="{% if section.settings.fluid_video_layout %} full-video-layout position-relative{% else %}row align-items-center{% endif %}">
             <!-- <a class="skip-to-content-link button visually-hidden" href="#custom-video">
                 {{ "accessibility.skip_to_text" | t }}

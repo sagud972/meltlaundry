@@ -9,8 +9,8 @@
 }
 
 .header-slider .fullheight .swiper-slide{
-    height: 100vh;
-    min-height: 700px;
+    height: calc(100vh - 98px);
+    min-height: 510px;
 }
 
 .header-slider .swiper-slide img,

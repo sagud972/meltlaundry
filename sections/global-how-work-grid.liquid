@@ -21,10 +21,10 @@
               {% for block in section.blocks %}
               <div class="{% unless section.settings.grid_size == '12' %}col-sm-6{% endunless %} col-md-{{ section.settings.grid_size }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
                   <div class="d-flex flex-column {% if forloop.last == true %} mb-0 {% else %} mb-sm-5 mb-4{% endif %}">
-                      <div class="text-center mb-4 mx-auto w-100" style="max-width: 90px;">
+                      <div class="text-center mb-4 mx-auto w-100" style="max-width: 280px;">
                         {% if block.settings.icon_img != blank %}
                         <div class="card-square">
-                          <img class="object-fit-contain" src="{{ block.settings.icon_img }}" alt="{{ block.settings.title }}" title="{{ block.settings.title }}"
+                          <img class="object-fit-contain p-5" src="{{ block.settings.icon_img }}" alt="{{ block.settings.title }}" title="{{ block.settings.title }}"
                           width="{{ block.settings.icon_img.width }}"
                           height="{{ block.settings.icon_img.width | divided_by: block.settings.icon_img.aspect_ratio }}" loading="lazy"/>
                         </div>
@@ -61,8 +61,8 @@
 
 {% schema %}
   {
-    "name": "Features Grid",
-    "class": "index-features-grid",
+    "name": "How Work Grid",
+    "class": "index-features-grid index-how-work-grid",
     "settings": [
       {
         "type": "header",

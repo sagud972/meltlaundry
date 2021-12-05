@@ -16,17 +16,32 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    opacity: 0;
 }
-
+.card-product .card-img>a img
+{
+    transition: all 0.3s;
+    object-fit: contain !important;
+}
 .card-product .card-img>a:hover img {
     z-index: 1;
+    opacity: 1 !important;
+}
+.card-product .card-img>a:hover img:first-child
+{
+    opacity: 0 !important;
+}
+.card-product .card-img>a img:first-child:last-child
+{
+    opacity: 1 !important;
 }
 
 .card-product .badges {
     position: absolute;
-    top: 0;
-    left: 0;
-    padding: 4px;
+    top: 5px;
+    left: 8px;
+    padding: 5px;
+    z-index: 3;
 }
 
 .badge:empty {

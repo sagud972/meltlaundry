@@ -5,7 +5,8 @@
         transition: transform 0.15s ease-out;
     }
     
-    .shopify-section-header-sticky {
+    .shopify-section-header-sticky,
+    #shopify-section-header {
         position: sticky;
         top: 0;
     }

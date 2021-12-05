@@ -10,7 +10,7 @@
         <div class="row">
 
             <div class="col-xl-3 text-xl-start text-center mb-xl-0 mb-5">
-              <a href="{{ routes.root_url }}" name="{{ shop.name | escape }}" title="{{ shop.name | escape }}" aria-label="{{ shop.name | escape }}">
+              <a href="{{ routes.root_url }}" name="{{ shop.name | escape }}" title="{{ shop.name | escape }}" aria-label="{{ shop.name | escape }}" style="filter: brightness(0) invert(1);">
                 {%- if logo_svg != blank -%}
                   <img src="{{ logo_svg }}" alt="{{ shop.name | escape }}" class="img-fluid mb-4" loading="lazy" width="200" height="80" style="max-width: {{ section.settings.logo_max_width }}px"
                   width="{{ section.settings.logo_max_width }}"
@@ -35,7 +35,7 @@
             <div class="col-sm-12 col-lg-7 col-xl-6">
 
               <div class="row text-center text-sm-start">
-                  <div class="col-sm-4 col-lg-4">
+                  <div class="col-sm-6">
                     {% if section.settings.col_2_heading != blank %}
                     <h5 class="text-capitalize">{{ section.settings.col_2_heading }}</h5>
                     {% endif %}
@@ -53,7 +53,7 @@
                     {% endif %}
                   </div>
 
-                  <div class="col-sm-4 col-lg-4 mt-3 mt-sm-0">
+                  <div class="col-sm-6 mt-3 mt-sm-0">
                     {% if section.settings.col_3_heading != blank %}
                     <h5 class="text-capitalize">{{ section.settings.col_3_heading }}</h5>
                     {% endif %}
@@ -61,23 +61,6 @@
                     {% if linklists[footer_linklist_3].links.size > 0 %}
                       <ul class="list-unstyled footer-navigation font-size-md">
                         {% for link in linklists[footer_linklist_3].links %}
-                           <li class="{% unless forloop.index == 1 %}my-2{% endunless %}">
-                            <a href="{{ link.url }}" style="color: {{ section.settings.footer_top_link_color }};" name="{{ link.title }}" title="{{ link.title }}" aria-label="{{ link.title }}">
-                              <span>{{ link.title }}</span>
-                            </a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-                  </div>
-
-                  <div class="col-sm-4 col-lg-4 mt-3 mt-sm-0">
-                    {% if section.settings.col_4_heading != blank %}
-                    <h5 class="text-capitalize">{{ section.settings.col_4_heading }}</h5>
-                    {% endif %}
-                    {% if linklists[footer_linklist_4].links.size > 0 %}
-                      <ul class="list-unstyled footer-navigation font-size-md">
-                        {% for link in linklists[footer_linklist_4].links %}
                            <li class="{% unless forloop.index == 1 %}my-2{% endunless %}">
                             <a href="{{ link.url }}" style="color: {{ section.settings.footer_top_link_color }};" name="{{ link.title }}" title="{{ link.title }}" aria-label="{{ link.title }}">
                               <span>{{ link.title }}</span>
@@ -262,21 +245,6 @@
             {
                 "type": "link_list",
                 "id": "footer_linklist_col_3",
-                "label": "Select Menu"
-            },
-            {
-                "type": "header",
-                "content": "Column 4"
-            },
-            {
-                "type": "text",
-                "id": "col_4_heading",
-                "label": "Heading",
-                "default": "Footer menu"
-            },
-            {
-                "type": "link_list",
-                "id": "footer_linklist_col_4",
                 "label": "Select Menu"
             },
             {

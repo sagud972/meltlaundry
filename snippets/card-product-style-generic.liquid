@@ -1,7 +1,7 @@
 {% assign current_variant = product.selected_or_first_available_variant %}
 
-<div class="card card-product card-product-style-1 text-left rounded-0 border-0" data-product-grid>
-  <span class="badges">
+<div class="card card-product card-product-style-1 text-left rounded-0 border-0 px-3" data-product-grid>
+  <span class="badges text-uppercase">
     {%- liquid
       assign onSale = false
       assign soldOut = false
@@ -20,20 +20,20 @@
       {%- assign badgeData = badge | strip | split:':'  -%}
       {%- assign badgeLabel = badgeData[1] | strip -%}
       {%- if product.tags contains badgeData[0] -%}
-        <span class="badge badge-right badge-warning" >
+        <span class="badge badge-right badge-warning rounded-0" >
           {{ badgeLabel }}
         </span>
       {%- endif -%}
     {%- endfor -%}
 
     {% if onSale %}
-      <span class="badge badge-right badge-danger" >
+      <span class="badge badge-right badge-primary rounded-0" >
         {{ 'products.product.on_sale' | t | escape }}
       </span>
     {% endif %}
 
     {% if soldOut %}
-      <span class="badge badge-right badge-warning">
+      <span class="badge badge-right badge-warning rounded-0">
         {{ 'products.product.sold_out' | t | escape }}
       </span>
     {% endif %}
@@ -44,7 +44,7 @@
 
     {% if current_variant and current_variant.image %}
       {% assign secondaryImage = product.featured_image %}
-      <a href="{{ product.url | within: collection }}" class="d-block product-link" >
+      <a href="{{ product.url | within: collection }}" class="d-block product-link p-3 font-size-xl" >
         <img src="{{ current_variant.image | img_url: 'pico' }}"
             srcset="{{ current_variant.image | img_url: '478x', crop: 'center' }}"
             sizes="auto"  loading="lazy"
@@ -65,7 +65,7 @@
         {%- endif -%}
       </a>
     {% elsif product.featured_image.size > 0 %}
-        <a href="{{ product.url | within: collection }}" class="d-block product-link" >
+        <a href="{{ product.url | within: collection }}" class="d-block product-link p-3 font-size-xl" >
             <img src="{{ product.featured_image | img_url: 'pico' }}"
                 srcset="{{ product.featured_image | img_url: '478x', crop: 'center' }}"
                 sizes="auto"  loading="lazy"
@@ -86,7 +86,7 @@
             {%- endif -%}
         </a>
     {% else if settings.no_image_replacement != blank %}
-      <a href="{{ product.url | within: collection }}" class="d-block product-link" >
+      <a href="{{ product.url | within: collection }}" class="d-block product-link p-3 font-size-xl" >
         <img src="{{ settings.no_image_replacement | img_url: 'pico' }}"
             srcset="{{ settings.no_image_replacement | img_url: '478x', crop: 'center' }}"
             sizes="auto"  loading="lazy"

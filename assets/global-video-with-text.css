@@ -21,7 +21,7 @@
 .video-section,
 .content-section {
     position: relative;
-    padding-top: 56.66%;
+    padding-top: 40%;
 }
 
 .video-section iframe,
@@ -69,4 +69,13 @@
 .custom-video-banner.video--paused .video__banner .play__button,
 .custom-video-banner.video--playing .video__banner .play__button{
     display: none;
+}
+.video-section video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
