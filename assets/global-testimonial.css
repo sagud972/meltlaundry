@@ -19,3 +19,9 @@
 {
     margin-left: 1px;
 }
+.tablink.open .nav-link, 
+.tablink .nav-link:hover
+{
+    border-color: #f4a734 !important;
+
+}

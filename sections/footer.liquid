@@ -86,7 +86,7 @@
                         <div class="input-group mb-5"> 
                             <input type="email" name="contact[email]" aria-label="email" id="newsletterFooterCustomerEmail" class="form-control" placeholder="{{ 'general.social.newsletter_form.newsletter_email' | t }}" value="{% if customer %}{{ customer.email }}{% endif %}" autocorrect="off" autocapitalize="off" required>
                             <input type="hidden" name="contact[tags]" value="newsletter">
-                            <button type="submit" name="btnSubmit" aria-label="submit" class="btn btn-primary btn-sm">
+                            <button type="submit" name="btnSubmit" aria-label="submit" class="btn btn-secondary btn-sm">
                                 {{ 'general.social.newsletter_form.button' | t }}
                             </button>
                         </div>
@@ -116,7 +116,7 @@
       <div class="{% if section.settings.fluid_footer %}container-fluid{% else %}container{% endif %}">
           <div class="row d-flex align-items-center">
               <div class="col-md-6 text-center text-md-start">
-                  <span class="small text-gray-700">&copy; {{ 'now' | date: "%Y" }} {{ 'sections.footer.copyright' | t }} - {{ 'sections.footer.all_rights_reserved' | t }}</span>
+                  <span class="small text-gray-700">&copy; {{ 'now' | date: "%Y" }} {{ shop.name }} - {{ 'sections.footer.all_rights_reserved' | t }}</span>
               </div>
               <div class="col-md-6 text-center text-md-end">
                 {% if section.settings.show_payment_icons %}

@@ -8,7 +8,7 @@
         <div class="row mb-3">
             <div class="col-12 text-center">
                 {% if section.settings.heading_txt != blank %}
-                  <h6 class="section-title text-uppercase">{{ section.settings.heading_txt }}</h6>
+                  <h2 class="section-title text-capitalize">{{ section.settings.heading_txt }}</h2>
                 {% endif %}
  
                 {% if section.settings.lead_txt != blank %}
@@ -19,69 +19,83 @@
             </div>
         </div>
         {% if section.blocks.size > 0 %}
-        {% for block in section.blocks %}
-            <div class="{{ block.settings.alignment }} swiper-slide" data-block-id="{{ block.id }}"> 
-                {% if block.settings.title != blank %}
-                    <div class="col-xl-8 col-lg-9 col-md-10 px-0 mx-auto mb-md-5 mb-4">
-                        <div style="box-shadow: 0 2px 2px rgba(0,0,0,0.25);">
-                            <div class="align-items-center justify-content-md-between row no-gutter p-3" style="background-color:#f6f6f6;">
-                                {% if block.settings.author_name != blank %}
-                                    <div class="mb-n3 pe-3 col-md-8">{{ block.settings.author_name }}</div>
-                                    <div class="d-flex mt-md-n1 col-md-4 mt-2 star-icons justify-content-md-end">
-                                        <span class="d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                            </svg>
-                                        </span>
-                                        <span class="d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                            </svg>
-                                        </span>
-                                        <span class="d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                            </svg>
-                                        </span>
-                                        <span class="d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                            </svg>
-                                        </span>
-                                        <span class="d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                {% endif %}
-                            </div>    
-                            <div class="mb-0 fw-normal lh-base bg-white p-3 pb-0" style="padding-bottom: 1px !important;">{{ block.settings.title }}</div> 
-                            <div class="align-items-center justify-content-md-between row no-gutter p-3" style="background-color:#f6f6f6;">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <a class="text-primary" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-                                                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
-                                              </svg>
-                                            </a>
-                                        <span class="ms-1">0</span>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <a class="text-primary d-flex align-items-center" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi me-1 bi-share-fill" viewBox="0 0 16 16">
-                                                <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                            </svg>
-                                            Share
-                                        </a>
-                                    </div>
+        <div class="row">
+            <custom-tabs class="d-block">
+                <div class="container">
+                   <div id="productTabs" data-product-tabs="">
+                      <div class="col-xl-8 col-lg-9 col-md-10 px-0 mx-auto mb-md-5 mb-4 mt-4">
+                        <ul class="d-flex list-unstyled flex-wrap text-capitalize justify-content-center fw-medium" role="tablist">
+                            <li class="tablink open" role="tab">
+                               <a class="nav-link border border-primary rounded-pill text-primary px-3 py-1 m-1 d-flex" data-toggle="tab" href="#tab01" data-tabcontent="#tab01"
+                                  aria-expanded="true">All Reviews (4)</a>
+                            </li>
+                            <li class="tablink" role="tab">
+                               <a class="nav-link border border-primary rounded-pill text-primary px-3 py-1 m-1 d-flex" data-toggle="tab" href="#tab02" data-tabcontent="#tab02"
+                                  aria-expanded="false">Product (0)</a>
+                            </li>
+                         </ul>
+                      </div>
+                      <div class="tab-content text-left" id="productTabsContent">
+                         <div class="tab-pane tabcontent open" id="tab01" role="tabpanel">
+                            {% for block in section.blocks %}
+                                <div class="{{ block.settings.alignment }} swiper-slide" data-block-id="{{ block.id }}"> 
+                                    {% if block.settings.title != blank %}
+                                        <div class="col-xl-8 col-lg-9 col-md-10 px-0 mx-auto mb-md-5 mb-4">
+                                            <div style="box-shadow: 0 2px 2px rgba(0,0,0,0.25);">
+                                                <div class="align-items-center justify-content-md-between row no-gutter p-3" style="background-color:#f6f6f6;">
+                                                    {% if block.settings.author_name != blank %}
+                                                        <div class="mb-n3 pe-3 col-md-8">{{ block.settings.author_name }}</div>
+                                                        <div class="d-flex mt-md-n1 col-md-4 mt-2 star-icons justify-content-md-end">
+                                                            <span class="d-none">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star" viewBox="0 0 16 16">
+                                                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="d-flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="d-flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="d-flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="d-flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="d-flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd000" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                </svg>
+                                                            </span>
+                                                            
+                                                        </div>
+                                                    {% endif %}
+                                                </div>    
+                                                <div class="mb-0 fw-normal lh-base bg-white p-3 pb-0" style="padding-bottom: 1px !important;">{{ block.settings.title }}</div> 
+                                                
+                                            </div>
+                                        </div>     
+                                    {% endif %}
                                 </div>
-                            </div>
-                        </div>
-                    </div>     
-                {% endif %}
-            </div>
-        {% endfor %}
+                            {% endfor %}
+                         </div>
+                         <div class="tab-pane tabcontent" id="tab02" role="tabpanel">
+                            <div class="rte pt-5 px-lg-6"></div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </custom-tabs>
+        </div>
         {% endif %} 
     </div>
 </section>
@@ -223,7 +237,7 @@
                                 "label": "Right"
                             }
                         ],
-                        "default": "text-center"
+                        "default": "text-left"
                     }
                 ]
             }

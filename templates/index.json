@@ -51,7 +51,7 @@
         "btn_type": "",
         "btn_variant": "secondary",
         "btn_size": "",
-        "image": "shopify:\/\/shop_images\/Untitled_design_54c7be61-a266-4c1f-ac4c-75030817339d.png",
+        "image": "shopify:\/\/shop_images\/hero_09980593-b9a2-4735-a573-c75624902250.png",
         "section_bg_color": "#ffffff",
         "section_text_color": "#000000",
         "alignment": "text-left",
@@ -259,7 +259,7 @@
         "step_heading": "",
         "steps_captions": "",
         "btn_txt": "Learn How To Make a Difference",
-        "btn_link": "shopify:\/\/pages\/about-melt",
+        "btn_link": "",
         "btn_type": "",
         "btn_variant": "secondary",
         "btn_size": "btn-sm",
@@ -364,43 +364,53 @@
     "1638894422914b090f": {
       "type": "global-testimonial",
       "blocks": {
-        "49b10c23-e974-42fc-ba1a-90fe8be04a31": {
-          "type": "logowidthtext",
-          "settings": {
-            "quote_logo": "",
-            "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.<\/p>",
-            "author_name": "<p><strong>Lisa Elrod -<\/strong> Tuesday, December 7, 2021<\/p>",
-            "alignment": "text-left"
-          }
-        },
         "f040a9bd-b1ba-451a-87b4-f13755ea22f8": {
           "type": "logowidthtext",
           "settings": {
             "quote_logo": "",
-            "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.<\/p>",
-            "author_name": "",
-            "alignment": "text-center"
+            "title": "<p><strong>Excellent eco product<br\/><\/strong>Excellent eco product. I was having problems with a new High Efficiency machine. Too much sudsy residue when wash ended. Much much better with Melt. Happy to subscribe but I don't need Melt60 every 7 weeks. At  2 washes a week with hard water = 4 strips x 7 = 28 to 30 every 7 weeks.   How can I order this?<\/p>",
+            "author_name": "<p><strong>Mary Moore <\/strong>- 2 days ago<strong> <\/strong><\/p>",
+            "alignment": "text-left"
           }
         },
         "28f3213c-edfb-49b4-ae10-b7d14c825b11": {
           "type": "logowidthtext",
           "settings": {
             "quote_logo": "",
-            "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.<\/p>",
-            "author_name": "",
-            "alignment": "text-center"
+            "title": "<p><strong>Saw this advertised in the Guardian.<br\/><\/strong>Saw this advertised in the Guardian.Important to do All I can to help this Wonderful Planet we inhabit.Sample arrived quickly, was pleased and amazed with results. Really good, easy, no faff.Service was excellent, this is the one for me from now on. Thankyou MELT<\/p>",
+            "author_name": "<p><strong>Susan Lenton<\/strong> - 2 week ago<\/p>",
+            "alignment": "text-left"
+          }
+        },
+        "eefbc490-f17f-4d66-8adf-2e3dee5e6365": {
+          "type": "logowidthtext",
+          "settings": {
+            "quote_logo": "",
+            "title": "<p><strong>Very speedy delivery<br\/><\/strong>Very speedy delivery, great smelling product, cleans as well as any laundry product and helps save the planet. Win win!!<\/p>",
+            "author_name": "<p><strong>Quidco Member <\/strong>- 3 weeks ago<\/p>",
+            "alignment": "text-left"
+          }
+        },
+        "49b10c23-e974-42fc-ba1a-90fe8be04a31": {
+          "type": "logowidthtext",
+          "settings": {
+            "quote_logo": "",
+            "title": "<p><strong>Excellent product and service<\/strong><br\/>Delighted to find an eco’ product that works well! Had a sample, then ordered the box, plus free travel ones.Seems to work well on laundry items, so will continue to use, once I’ve used up my stock of old style detergent.<\/p>",
+            "author_name": "<p><strong>Elizabeth Bailey -<\/strong> 3 weeks ago<\/p>",
+            "alignment": "text-left"
           }
         }
       },
       "block_order": [
-        "49b10c23-e974-42fc-ba1a-90fe8be04a31",
         "f040a9bd-b1ba-451a-87b4-f13755ea22f8",
-        "28f3213c-edfb-49b4-ae10-b7d14c825b11"
+        "28f3213c-edfb-49b4-ae10-b7d14c825b11",
+        "eefbc490-f17f-4d66-8adf-2e3dee5e6365",
+        "49b10c23-e974-42fc-ba1a-90fe8be04a31"
       ],
       "settings": {
         "fluid_layout": false,
-        "heading_txt": "",
-        "lead_txt": "",
+        "heading_txt": "Our clients speak",
+        "lead_txt": "<p>Still unsure. Here's verified Trustpilot feedback<\/p>",
         "section_bg_color": "#eaf3fb",
         "section_text_color": "#000000",
         "enable": false,
@@ -408,6 +418,81 @@
         "opacity": 0.5,
         "nav_arrows": true,
         "nav_dots": true
+      }
+    },
+    "163890338461d632ba": {
+      "type": "global-image-with-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "Less Gunk. More Clean.",
+        "txt": "<p>I saw a newspaper offer of a free box of melt sheets and liked the concept, so applied for the offer.<\/p><p> Although I was initially sceptical, the sheets worked well and we've been using them ever since. We have soft water and one sheet works well on most loads. We'll continue to use melt.There's no particular pattern to our laundry so I'm not sure how the subscription model will work out, but I expect that'll become clearer with time.Melt is both convenient and effective.<br\/><br\/><strong>George Owen <\/strong>- Melt Subscriber<strong> <\/strong><\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "",
+        "btn_link": "",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "",
+        "image": "shopify:\/\/shop_images\/2_glasses_image_ad.png",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "left"
+      }
+    },
+    "16389035651c59b516": {
+      "type": "global-image-with-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "Giving Back to The Community",
+        "txt": "<p>Melt Laundry set out to <strong>donate 1 million washes<\/strong> to the economically challenged and homeless in the UK. We were told it's the largest ever by a UK laundry brand. We are happy to announce we are already 10% towards reaching our goal after just 2 months.<\/p><p>More details on our social media channels.<\/p><p><strong>Help us make a change by recommending charities or foodbanks that are in need of an eco-friendly laundry solution!<\/strong><\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "Contact Us",
+        "btn_link": "shopify:\/\/pages\/contact-us",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "",
+        "image": "shopify:\/\/shop_images\/charity.jpg",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "right"
+      }
+    },
+    "16389038347240eb67": {
+      "type": "global-teaser-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "Over 120,000 Boxes Sold Worldwide!",
+        "lead_txt": "If you want a cool zero-plastic eco detergent that can outperform the old detergent brands then get on Melt today.",
+        "btn_txt": "Shop Now",
+        "btn_url": "shopify:\/\/products\/copy-of-melt-60-washes",
+        "section_bg_color": "#eaf3fb",
+        "section_txt_color": "#222222",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": ""
+      }
+    },
+    "1638904026152b99e4": {
+      "type": "global-image-with-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "Your Friendly Founders",
+        "txt": "<p>Hi! I'm Marcus Thompson, creator, co-founder and CEO of Melt Products. Melt is 9 months of my life in a fast dissolving laundry strip!<\/p><p>I'm a serial Eco Entrepreneur. I live to make ideas real and I've co-founded 4 brands in environmental technology and eco laundry care. I absolutely love it!<\/p><p>My other eco products and brands are sold in 170 countries including Harrods, Ocado, Selfridges & Net-A-Porter, the world's premier online luxury fashion retailer.<\/p><p>But Melt is different. It's everyday for everyone. We decided that now was the time to bring an effective, value eco-friendly brand to the market. The UK first then global! Eco for All. <strong>No point Eco being just for the well-off minority! How will that save the planet?<\/strong><\/p><p>Clare, my wife is amazing at dealing with the people matters and brings great management experience to Melt. We have a world class team of contractors and partners from 15 countries who helped us develop and launch Melt. We are growing super fast now, have 5 other products in the pipeline and we are hiring! Thanks for visiting.<br\/><\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "",
+        "btn_link": "",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "",
+        "image": "shopify:\/\/shop_images\/Your_friendly_Founders_dc2a76eb-b1ca-4b6e-ad22-f09f1f037e4c.jpg",
+        "section_bg_color": "#FAFAF7",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "left"
       }
     }
   },
@@ -423,6 +508,10 @@
     "16388918785d048852",
     "1638892930ff6ebff3",
     "163889402269df203f",
-    "1638894422914b090f"
+    "1638894422914b090f",
+    "163890338461d632ba",
+    "16389035651c59b516",
+    "16389038347240eb67",
+    "1638904026152b99e4"
   ]
 }
