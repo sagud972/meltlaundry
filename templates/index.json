@@ -177,6 +177,26 @@
         "nav_dots": true
       }
     },
+    "163890338461d632ba": {
+      "type": "global-image-with-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "Less Gunk. More Clean.",
+        "txt": "<p>I saw a newspaper offer of a free box of melt sheets and liked the concept, so applied for the offer.<\/p><p> Although I was initially sceptical, the sheets worked well and we've been using them ever since. We have soft water and one sheet works well on most loads. We'll continue to use melt.There's no particular pattern to our laundry so I'm not sure how the subscription model will work out, but I expect that'll become clearer with time.Melt is both convenient and effective.<br\/><br\/><strong>George Owen <\/strong>- Melt Subscriber<strong> <\/strong><\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "",
+        "btn_link": "",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "",
+        "image": "shopify:\/\/shop_images\/2_glasses_image_ad.png",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "left"
+      }
+    },
     "162943776301163939": {
       "type": "global-video-with-text",
       "settings": {
@@ -361,6 +381,26 @@
         "show_text_below": true
       }
     },
+    "1638904026152b99e4": {
+      "type": "global-image-with-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "Your Friendly Founders",
+        "txt": "<p>Hi! I'm Marcus Thompson, creator, co-founder and CEO of Melt Products. Melt is 9 months of my life in a fast dissolving laundry strip!<\/p><p>I'm a serial Eco Entrepreneur. I live to make ideas real and I've co-founded 4 brands in environmental technology and eco laundry care. I absolutely love it!<\/p><p>My other eco products and brands are sold in 170 countries including Harrods, Ocado, Selfridges & Net-A-Porter, the world's premier online luxury fashion retailer.<\/p><p>But Melt is different. It's everyday for everyone. We decided that now was the time to bring an effective, value eco-friendly brand to the market. The UK first then global! Eco for All. <strong>No point Eco being just for the well-off minority! How will that save the planet?<\/strong><\/p><p>Clare, my wife is amazing at dealing with the people matters and brings great management experience to Melt. We have a world class team of contractors and partners from 15 countries who helped us develop and launch Melt. We are growing super fast now, have 5 other products in the pipeline and we are hiring! Thanks for visiting.<br\/><\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "",
+        "btn_link": "",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "",
+        "image": "shopify:\/\/shop_images\/Your_friendly_Founders_dc2a76eb-b1ca-4b6e-ad22-f09f1f037e4c.jpg",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "left"
+      }
+    },
     "1638894422914b090f": {
       "type": "global-testimonial",
       "blocks": {
@@ -420,26 +460,6 @@
         "nav_dots": true
       }
     },
-    "163890338461d632ba": {
-      "type": "global-image-with-text",
-      "settings": {
-        "fluid_layout": false,
-        "heading_txt": "Less Gunk. More Clean.",
-        "txt": "<p>I saw a newspaper offer of a free box of melt sheets and liked the concept, so applied for the offer.<\/p><p> Although I was initially sceptical, the sheets worked well and we've been using them ever since. We have soft water and one sheet works well on most loads. We'll continue to use melt.There's no particular pattern to our laundry so I'm not sure how the subscription model will work out, but I expect that'll become clearer with time.Melt is both convenient and effective.<br\/><br\/><strong>George Owen <\/strong>- Melt Subscriber<strong> <\/strong><\/p>",
-        "step_heading": "",
-        "steps_captions": "",
-        "btn_txt": "",
-        "btn_link": "",
-        "btn_type": "",
-        "btn_variant": "primary",
-        "btn_size": "",
-        "image": "shopify:\/\/shop_images\/2_glasses_image_ad.png",
-        "section_bg_color": "rgba(0,0,0,0)",
-        "section_text_color": "#000000",
-        "alignment": "text-left",
-        "image_alignment": "left"
-      }
-    },
     "16389035651c59b516": {
       "type": "global-image-with-text",
       "settings": {
@@ -468,31 +488,11 @@
         "lead_txt": "If you want a cool zero-plastic eco detergent that can outperform the old detergent brands then get on Melt today.",
         "btn_txt": "Shop Now",
         "btn_url": "shopify:\/\/products\/copy-of-melt-60-washes",
-        "section_bg_color": "#eaf3fb",
+        "section_bg_color": "#fafbfc",
         "section_txt_color": "#222222",
         "btn_type": "",
         "btn_variant": "primary",
         "btn_size": ""
-      }
-    },
-    "1638904026152b99e4": {
-      "type": "global-image-with-text",
-      "settings": {
-        "fluid_layout": false,
-        "heading_txt": "Your Friendly Founders",
-        "txt": "<p>Hi! I'm Marcus Thompson, creator, co-founder and CEO of Melt Products. Melt is 9 months of my life in a fast dissolving laundry strip!<\/p><p>I'm a serial Eco Entrepreneur. I live to make ideas real and I've co-founded 4 brands in environmental technology and eco laundry care. I absolutely love it!<\/p><p>My other eco products and brands are sold in 170 countries including Harrods, Ocado, Selfridges & Net-A-Porter, the world's premier online luxury fashion retailer.<\/p><p>But Melt is different. It's everyday for everyone. We decided that now was the time to bring an effective, value eco-friendly brand to the market. The UK first then global! Eco for All. <strong>No point Eco being just for the well-off minority! How will that save the planet?<\/strong><\/p><p>Clare, my wife is amazing at dealing with the people matters and brings great management experience to Melt. We have a world class team of contractors and partners from 15 countries who helped us develop and launch Melt. We are growing super fast now, have 5 other products in the pipeline and we are hiring! Thanks for visiting.<br\/><\/p>",
-        "step_heading": "",
-        "steps_captions": "",
-        "btn_txt": "",
-        "btn_link": "",
-        "btn_type": "",
-        "btn_variant": "primary",
-        "btn_size": "",
-        "image": "shopify:\/\/shop_images\/Your_friendly_Founders_dc2a76eb-b1ca-4b6e-ad22-f09f1f037e4c.jpg",
-        "section_bg_color": "#FAFAF7",
-        "section_text_color": "#000000",
-        "alignment": "text-left",
-        "image_alignment": "left"
       }
     }
   },
@@ -502,16 +502,16 @@
     "162703446299aaa8de",
     "16270420142c0cafe8",
     "16271097114d5db4ef",
+    "163890338461d632ba",
     "162943776301163939",
     "1638705110baeb7a44",
     "16388918723648c12c",
     "16388918785d048852",
     "1638892930ff6ebff3",
     "163889402269df203f",
+    "1638904026152b99e4",
     "1638894422914b090f",
-    "163890338461d632ba",
     "16389035651c59b516",
-    "16389038347240eb67",
-    "1638904026152b99e4"
+    "16389038347240eb67"
   ]
 }
