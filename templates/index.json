@@ -208,14 +208,32 @@
         "163870511072474d38-0": {
           "type": "content",
           "settings": {
-            "icon_img": "",
-            "title": "",
-            "txt": ""
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/3_icons-01_2bac4f15-9da5-4569-8755-988967179e8b.png?v=1635370813",
+            "title": "Step 1",
+            "txt": "<p>Take<strong>1-3 Strips<\/strong>from the Melt Box<\/p>"
+          }
+        },
+        "81f662a8-f745-43e3-8383-2078a6ed1db4": {
+          "type": "content",
+          "settings": {
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/washing-machine_1.png?v=1635360765",
+            "title": "Step 2",
+            "txt": "<p>Place the Melt Strip(s) Inside your Washing Machine & Start!<\/p>"
+          }
+        },
+        "b2b87cc3-ea55-4c3b-b5dd-40771da4c545": {
+          "type": "content",
+          "settings": {
+            "icon_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0493\/3805\/6854\/files\/laundry.png?v=1635360765",
+            "title": "Step 3",
+            "txt": "<p>Take your laundry out of the machine. You're left with fresh, bright, & clean laundry!<\/p>"
           }
         }
       },
       "block_order": [
-        "163870511072474d38-0"
+        "163870511072474d38-0",
+        "81f662a8-f745-43e3-8383-2078a6ed1db4",
+        "b2b87cc3-ea55-4c3b-b5dd-40771da4c545"
       ],
       "settings": {
         "fluid_layout": false,
@@ -230,6 +248,117 @@
         "btn_variant": "primary",
         "btn_size": ""
       }
+    },
+    "16388918723648c12c": {
+      "type": "global-image-with-text-2",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "The Damaging Effects of Laundry Pods on the Planet",
+        "txt": "<p><strong>Detergent pods are extremely harmful to the environment<\/strong>! Phosphates, bleach, formaldehyde, & more<\/p><p>These are particularly damaging to the marine environment when dispersed in wastewater from your wash. <strong>They create algae blooms that starve marine flora and fauna of oxygen.<\/strong><\/p><p>Melt Laundry Strips contain <strong>less chemicals<\/strong> & are 100% kinder for the environment.<\/p><p>Melt strips dissolve fully in seconds so no gunk is left on garments or in your machine either. This avoids bacteria and fungal growth inside the drum. We can not say that about pods.<\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "Learn How To Make a Difference",
+        "btn_link": "",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "btn-sm",
+        "image": "shopify:\/\/shop_images\/marine_life.jpg",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "section_text_color": "#080c12",
+        "alignment": "text-left",
+        "image_alignment": "left"
+      }
+    },
+    "16388918785d048852": {
+      "type": "global-image-with-text-2",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "Melt's Microscopic Clean",
+        "txt": "<p>Melt gets to work on dirt in seconds at a microscopic level. Laundry pods were invented 10 years before modern low water machines took root.<\/p><p><strong>Pods were only designed to work in lots of water and higher temperatures. <\/strong>Two things we don't get in our machines anymore.<\/p><p><strong>Melt was designed exactly to suit this eco challenge<\/strong> and delivers the ideal solution for <strong>perfectly clean clothes at all temperatures even at the lowest water usage. It's a modern miracle!<\/strong><\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "GET STARTED",
+        "btn_link": "shopify:\/\/products\/copy-of-melt-60-washes",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "btn-sm",
+        "image": "shopify:\/\/shop_images\/Sequence_03.gif",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "right"
+      }
+    },
+    "1638892930ff6ebff3": {
+      "type": "global-image-with-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "The Result...",
+        "txt": "<p>Melt detergent strips dissolve <strong>100 times faster than laundry pods.<\/strong> They get to work <strong>within seconds.<\/strong><\/p><p>Melt's natural <strong>active ingredients<\/strong> ensures bright whites, removed stains, and a superb natural clean that defies Melt's small size. <strong>Melt is proud to be UK and LOW FRAGRANCE.<\/strong><\/p>",
+        "step_heading": "",
+        "steps_captions": "",
+        "btn_txt": "GET STARTED",
+        "btn_link": "shopify:\/\/products\/copy-of-melt-60-washes",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "",
+        "image": "shopify:\/\/shop_images\/shirt-cleaned_83a60387-d226-477d-8480-d4bc40d47bd5.png",
+        "section_bg_color": "#fafbfc",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "left"
+      }
+    },
+    "163889402269df203f": {
+      "type": "global-split-image-banner",
+      "blocks": {
+        "1638894022e5350f5f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Do Your Part & Help Save The World!"
+          }
+        },
+        "1638894022e5350f5f-1": {
+          "type": "text",
+          "settings": {
+            "text": "Help preserve our planet by switching over to Melt. Melt Laundry Strips are free from all artificial dyes, colors, phosphates, phthalates, parabens and other substances that are harmful to the environment"
+          }
+        },
+        "1638894022e5350f5f-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "GET STARTED",
+            "button_link_1": "shopify:\/\/products\/copy-of-melt-60-washes",
+            "btn_type_1": "",
+            "btn_variant_1": "primary",
+            "btn_size_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "btn_type_2": "",
+            "btn_variant_2": "primary",
+            "btn_size_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "1638894022e5350f5f-0",
+        "1638894022e5350f5f-1",
+        "1638894022e5350f5f-2"
+      ],
+      "settings": {
+        "image_large": "shopify:\/\/shop_images\/forest-min-min.jpg",
+        "image_small": "shopify:\/\/shop_images\/forest-min-min.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/forest-min-min.jpg",
+        "image_overlay_opacity": 0,
+        "height": "tallheight",
+        "show_text_box": true,
+        "text_caption_align": "justify-content-center",
+        "vertical_caption_align": "align-items-center",
+        "text_align": "text-center",
+        "color_scheme": "#ffffff",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -239,6 +368,10 @@
     "16270420142c0cafe8",
     "16271097114d5db4ef",
     "162943776301163939",
-    "1638705110baeb7a44"
+    "1638705110baeb7a44",
+    "16388918723648c12c",
+    "16388918785d048852",
+    "1638892930ff6ebff3",
+    "163889402269df203f"
   ]
 }

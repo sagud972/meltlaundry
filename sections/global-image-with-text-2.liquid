@@ -1,14 +1,14 @@
-<section class="section-content image-with-text py-md-8 py-6"  data-section-id="{{ section.id }}" style="background:{{ section.settings.section_bg_color }}; color:{{ section.settings.section_txt_color }}">
+<section class="section-content py-md-8 py-6"  data-section-id="{{ section.id }}" style="background:{{ section.settings.section_bg_color }}; color:{{ section.settings.section_txt_color }}">
     <div class="{% if section.settings.fluid_layout %}container-fluid{% else %}container{% endif %}">
-        <div class="row align-items-center">
-            <div class="col-12 col-md-6 {% if section.settings.image_alignment == 'left' %}order-md-1{% else %}order-md-2{% endif %}">
-                <div class="banner-img {{ section.settings.height }} w-100">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-6 {% if section.settings.image_alignment == 'left' %}order-md-1 me-md-n10{% else %}order-md-2 ms-md-n10{% endif %}">
+                <div class="banner-img {{ section.settings.height }} w-100 card-square">
                     {%- if section.settings.image != blank -%}
                     <img srcset="{{ section.settings.image | img_url: '480x600', crop: 'center' }} 360w,
                         {{ section.settings.image | img_url: '768x', crop: 'center' }} 535w,
                         {{ section.settings.image | img_url: '991x', crop: 'center' }} 720w"
                         src="{{ section.settings.image | img_url: 'pico' }}"
-                        sizes="auto" class="lazyload w-100"
+                        sizes="auto" class="lazyload object-fit-cover"
                         alt="{{ section.settings.image.alt | default: section.settings.heading_txt | escape }}"
                         loading="lazy"
                         width="{{ section.settings.image.width }}"
@@ -19,7 +19,7 @@
                     {%- endif -%}
                 </div>
             </div>
-            <div class="col-12 col-md-6 mt-4 mt-md-0 {% if section.settings.image_alignment == 'left' %}order-md-2{% else %}order-md-1{% endif %}">
+            <div class="col-12 col-md-6 bg-white mt-4 mt-md-0 shadow p-5 {% if section.settings.image_alignment == 'left' %}order-md-2 ms-md-n10{% else %}order-md-1 me-md-n10{% endif %}" style="z-index: 3;">
                 <div class="inside-block {{ section.settings.alignment }}">
                     {% if section.settings.heading_txt != blank %}
                         <h3 class="mb-3">{{ section.settings.heading_txt }}</h3> 
@@ -50,8 +50,8 @@
 
 {% schema %}
     {
-        "name": "Image With Text",
-        "class": "image-text-style",
+        "name": "Image With Text 2",
+        "class": "image-text-style image-text-style-2",
         "settings": [
             {
                 "type": "header",
@@ -229,7 +229,7 @@
         ],
         "presets": [
             {
-                "name": "Image With Text",
+                "name": "Image With Text 2",
                 "category": "Content"
             }
         ]
