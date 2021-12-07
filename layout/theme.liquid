@@ -25,11 +25,12 @@
     {%- render 'meta-tags' -%}
 
     {{ content_for_header }}
-
+    {{ 'bsub.js' | asset_url | script_tag }}
+    {{ 'bsub.scss.css' | asset_url | stylesheet_tag }}
     {%- render 'styles-tags' -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
-
+    {%- render 'bold-subscription-widget' -%}
   </head>
 
   <body class="template-{{ template.name }}">
