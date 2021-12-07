@@ -137,7 +137,8 @@
         <p>{{ product.vendor }}</p>
     {%- endif -%}
   </div>
-
+  <div>
+  </div>
   <div class="card-footer bg-transparent border-0 p-0">
     {%- if settings.enable_product_card_swatches -%}
       {%- render 'form-product', product: product, current_variant: current_variant, format: 'grid' -%}

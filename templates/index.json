@@ -62,6 +62,7 @@
       "type": "global-featured-collection",
       "settings": {
         "fluid_layout": false,
+        "enable_dynamic_checkout": true,
         "collection_grid_type": "collage",
         "heading_txt": "Our Collection",
         "lead_txt": "The most eco laundry product on the market",
@@ -258,7 +259,7 @@
         "step_heading": "",
         "steps_captions": "",
         "btn_txt": "Learn How To Make a Difference",
-        "btn_link": "",
+        "btn_link": "shopify:\/\/pages\/about-melt",
         "btn_type": "",
         "btn_variant": "secondary",
         "btn_size": "btn-sm",
