@@ -95,8 +95,8 @@
   </noscript>
   {% render 'bsub-widget', product: product %}
 <div class="row">
-    <div class="col-12 d-flex">
-        <button class="btn btn-outline-dark btn-sm flex-grow-1"
+    <div class="col-12 py-3">
+        <button class="w-100 btn btn-outline-dark btn-sm flex-grow-1"
             type="submit"
             name="add"
             aria-label="{{ 'products.product.add_to_cart' | t | escape }}"
@@ -107,7 +107,7 @@
 
         {% comment %} Dynamic Checkout Button {% endcomment %}
         {% if section.settings.enable_dynamic_checkout %}
-            <div class="mt-2">{{ form | payment_button }}</div>
+            <div class="mt-2" style="max-height: 51px">{{ form | payment_button }}</div>
         {% endif %}
 
         {%- if settings.enable_quickshop -%}
